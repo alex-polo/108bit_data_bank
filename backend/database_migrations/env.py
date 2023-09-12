@@ -5,16 +5,15 @@ from sqlalchemy import pool
 
 from alembic import context
 
-import server
-from config import DatabaseConfig, get_database_config
-from server.database import metadata
+from server import database
+from server.config import get_database_config
+from server.database.models import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
 
-database_config: DatabaseConfig = get_database_config()
-server.database.registry_database(database_config=database_config)
+database_config = get_database_config()
 
 section = config.config_ini_section
 config.set_section_option(section, "DB_USER", database_config.db_user)
@@ -34,7 +33,7 @@ if config.config_file_name is not None:
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 # target_metadata = None
-target_metadata = metadata
+target_metadata = Base.metadata
 
 
 # other values from the config, defined by the needs of env.py,

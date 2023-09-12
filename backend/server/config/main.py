@@ -2,7 +2,7 @@ import os
 
 from environs import Env
 
-from config.classes import DatabaseConfig
+from server.config.classes import DatabaseConfig
 
 
 def get_database_config() -> DatabaseConfig:

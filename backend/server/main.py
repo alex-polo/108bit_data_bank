@@ -1,4 +1,4 @@
-from config import get_database_config
+from server.config import get_database_config
 from server import database as database
 
 
