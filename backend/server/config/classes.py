@@ -2,9 +2,13 @@ from dataclasses import dataclass
 
 
 @dataclass
-class ServerConfig:
-    address: str
-    port: str
+class ServerAPIConfig:
+    host: str
+    port: int
+    allow_origins: list[str]
+    allow_credentials: bool
+    allow_methods: list[str]
+    allow_headers: list[str]
 
 
 @dataclass
