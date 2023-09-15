@@ -32,7 +32,7 @@ async def home(session: AsyncSession = Depends(get_async_session)):
             status_code=500,
             detail={
                 'application': 'Data Bank',
-                'version': 0.01,
+                'version': '0.01a',
                 'data': error
             })
 
