@@ -1,11 +1,11 @@
-from parsers.bolid import bolid_parser
-
 from resources.classes import Resource
+from parsers.bolid import bolid_parser
 
 sites_list: list = [
     Resource(
         name='bolid',
         system_name='bolid',
+        url='https://bolid.ru',
         tag='#Bolid',
         field_tags=['#Системы_автоматики', '#Системы_безопасности'],
         function=bolid_parser,

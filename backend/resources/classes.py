@@ -6,8 +6,8 @@ from typing import Any, List
 class Resource:
     name: str
     system_name: str
+    url: str
     tag: str
     field_tags: List[str]
-    # url: str
     function: Any
     is_enabled: bool
