@@ -1,0 +1,1 @@
+from resources.utils.synce_database import synchronization_with_database

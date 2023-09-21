@@ -1,6 +1,17 @@
-sites_list: dict = {
+from parsers.bolid import bolid_parser
 
-}
+from resources.classes import Resource
+
+sites_list: list = [
+    Resource(
+        name='bolid',
+        system_name='bolid',
+        tag='#Bolid',
+        field_tags=['#Системы_автоматики', '#Системы_безопасности'],
+        function=bolid_parser,
+        is_enabled=True
+    ),
+]
 
 # https://macroscop.com/produkty
 # Eltys
