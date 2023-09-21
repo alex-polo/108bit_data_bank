@@ -1,13 +1,24 @@
 import server
-from server.config import get_api_server_config
+import logging.config
+import traceback
+
+from logging import Logger
+
+
+def logging_configure() -> Logger:
+    logging.config.fileConfig('etc//api_server_logging.ini')
+    return logging.getLogger(__name__)
+
 
 if __name__ == '__main__':
-    try:
-        config_server = get_api_server_config()
-        server.run(config_server=config_server)
-        print(config_server)
+    logger = logging_configure()
 
+    try:
+        logger.info('Starting API Server')
+        server.run()
     except KeyboardInterrupt as interrupt:
-        print('API server stopped')
+        logger.error('API server stopped')
     except Exception as error:
-        print(error)
+        logger.error(error)
+        logger.error(traceback.format_exc(limit=None, chain=True))
+

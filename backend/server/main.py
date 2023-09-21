@@ -1,12 +1,17 @@
+import logging
+
 import uvicorn
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 
-from server.config import get_database_config, ServerAPIConfig
+from server.config import get_database_config, ServerAPIConfig, get_api_server_config
 from server import database as database
 from server.database import get_async_session
+
+
+logger = logging.getLogger()
 
 api_server = FastAPI()
 
@@ -47,7 +52,18 @@ def registry_middleware(config_server: ServerAPIConfig):
     )
 
 
-def run(config_server: ServerAPIConfig = None) -> None:
-    config = get_database_config()
-    print(database.registry_database(database_config=config))
-    uvicorn.run(api_server, host=config_server.host, port=config_server.port, log_config=None)
+def run() -> None:
+    server_config = get_api_server_config()
+    logger.debug(f'Configuration API Server: {server_config}')
+
+    database_config = get_database_config()
+    logger.debug(f'Configuration database: {database_config}')
+
+    database.registry_database(database_config=database_config)
+    uvicorn.run(
+        api_server,
+        host=server_config.host,
+        port=server_config.port,
+        log_config='etc/api_server_logging.ini',
+        access_log=True
+    )

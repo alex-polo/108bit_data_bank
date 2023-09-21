@@ -25,7 +25,7 @@ def get_api_server_config() -> ServerAPIConfig:
 
     return ServerAPIConfig(
         host=env.str('HOST'),
-        port=env.str('PORT'),
+        port=int(env.str('PORT')),
         allow_origins=env.str('ALLOWED_HOSTS').split(','),
         allow_credentials=ALLOW_CREDENTIALS,
         allow_methods=ALLOW_METHODS,
