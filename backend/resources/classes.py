@@ -9,5 +9,5 @@ class Resource:
     url: str
     tag: str
     field_tags: List[str]
-    function: Any
+    task: str
     is_enabled: bool

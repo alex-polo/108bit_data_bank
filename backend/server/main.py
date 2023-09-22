@@ -64,6 +64,6 @@ def run() -> None:
         api_server,
         host=server_config.host,
         port=server_config.port,
-        log_config='etc/api_server_logging.ini',
+        log_config='etc/server_logging.ini',
         access_log=True
     )

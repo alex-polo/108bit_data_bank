@@ -6,7 +6,7 @@ from logging import Logger
 
 
 def logging_configure() -> Logger:
-    logging.config.fileConfig('etc//api_server_logging.ini')
+    logging.config.fileConfig('etc/server_logging.ini')
     return logging.getLogger(__name__)
 
 

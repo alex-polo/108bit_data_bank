@@ -1,5 +1,4 @@
 from resources.classes import Resource
-from parsers.bolid import bolid_parser
 
 sites_list: list = [
     Resource(
@@ -8,7 +7,7 @@ sites_list: list = [
         url='https://bolid.ru',
         tag='#Bolid',
         field_tags=['#Системы_автоматики', '#Системы_безопасности'],
-        function=bolid_parser,
+        task='server.tasks.v1.bolid.parser.task',
         is_enabled=True
     ),
 ]
