@@ -1,6 +1,8 @@
+from typing import List
+
 from resources.classes import Resource
 
-sites_list: list = [
+sites_list: List[Resource] = [
     Resource(
         name='bolid',
         system_name='bolid',
@@ -64,7 +66,7 @@ sites_list: list = [
         task='server.tasks.v1.ironlogic.parser.task',
         is_enabled=True
     ),
-Resource(
+    Resource(
         name='bastion',
         system_name='bastion',
         url='https://bastion-tech.ru',
@@ -73,7 +75,7 @@ Resource(
         task='server.tasks.v1.bastion.parser.task',
         is_enabled=True
     ),
-Resource(
+    Resource(
         name='argus',
         system_name='argus',
         url='https://argus-spectr.ru',
@@ -84,7 +86,4 @@ Resource(
     ),
 ]
 
-
 # Eltys
-
-

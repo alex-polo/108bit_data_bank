@@ -28,22 +28,21 @@ app.autodiscover_tasks()
 # app.autodiscover_tasks(['server.tasks.v1'], related_name='tasks', force=True)
 
 
-def creating_periodic_tasks(sender) -> None:
+def creating_periodic_tasks() -> None:
 
     for resource in sites_list:
         app.conf.beat_schedule = {
             'task_bolid_data_collection': {
-                # 'task': resource.task,
-                'task': 'server.tasks.v1.bolid_task',
+                'task': resource.task,
+                # 'task': 'backend_tasks.v1.bolid.bolid_data_collection',
+                # 'task': 'server.tasks.v1.bolid.parser.bolid_task',
                 'schedule': crontab(minute=f'*/{celery_config.resources_parsing_time}'),
                 'options': {
-                    # 'exchange': 'data_collection',
                     'routing_key': 'task_data_collection',
                     'priority': 10
                 },
             },
         }
-
 
 # При запуске celery выполняем
 @app.on_after_configure.connect
