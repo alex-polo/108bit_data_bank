@@ -19,23 +19,21 @@ if not os.path.exists('logs'):
 logging.config.fileConfig(celery_config.logging_config)
 logger = logging.getLogger(__name__)
 
-
 app = Celery(__name__, broker=celery_config.broker, backend=celery_config.backend)
 app.config_from_object(celery_config.celeryconfig)
 
 # Автопоиск задач
 app.autodiscover_tasks()
+
+
 # app.autodiscover_tasks(['server.tasks.v1'], related_name='tasks', force=True)
 
 
 def creating_periodic_tasks() -> None:
-
     for resource in sites_list:
         app.conf.beat_schedule = {
             'task_bolid_data_collection': {
                 'task': resource.task,
-                # 'task': 'backend_tasks.v1.bolid.bolid_data_collection',
-                # 'task': 'server.tasks.v1.bolid.parser.bolid_task',
                 'schedule': crontab(minute=f'*/{celery_config.resources_parsing_time}'),
                 'options': {
                     'routing_key': 'task_data_collection',
@@ -43,6 +41,7 @@ def creating_periodic_tasks() -> None:
                 },
             },
         }
+
 
 # При запуске celery выполняем
 @app.on_after_configure.connect
@@ -62,11 +61,9 @@ def setup_periodic_tasks(sender, **kwargs):
                 # Если синхронизация завершилась успехом, делаем назначенные задачи
                 logger.info('Creating scheduled Tasks')
                 creating_periodic_tasks()
-                # sender.add_periodic_task(1.0, server.tasks.v1.bolid_task)
                 logger.info('Scheduled tasks created')
 
     except Exception as error:
         logger.error(error)
         logger.error(traceback.format_exc(limit=None, chain=True))
         logger.error('Configuration completed with errors')
-
