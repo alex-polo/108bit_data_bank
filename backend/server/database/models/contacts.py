@@ -1,11 +1,13 @@
 from sqlalchemy import Table, Column, ForeignKey, Integer
 
-from database.lib import Base
+from server.database.lib import Base
+from sqlalchemy.orm import Mapped, mapped_column
 
-contacts = Table(
-    "contacts",
-    Base.metadata,
-    Column("id", Integer(), primary_key=True),
-    Column("address", Integer(), primary_key=True),
-    Column("phone_number", Integer(), primary_key=False),
-)
+
+class Contacts(Base):
+    __tablename__ = "contacts"
+
+    address: Mapped[Text] = mapped_column(Integer, primary_key=True)
+    phones: Mapped[Text] = mapped_column(String(500), nullable=False)
+    mail: Mapped[Text] = mapped_column()
+    support: Mapped[Text] = mapped_column(String(50), nullable=True)

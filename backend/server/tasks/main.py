@@ -30,6 +30,7 @@ app.autodiscover_tasks()
 
 
 def creating_periodic_tasks() -> None:
+    # Выборка по бд
     for resource in sites_list:
         app.conf.beat_schedule = {
             'task_bolid_data_collection': {

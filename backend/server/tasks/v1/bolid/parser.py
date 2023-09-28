@@ -2,10 +2,16 @@ from celery import shared_task
 import requests
 from bs4 import BeautifulSoup
 
-# @shared_task()
-# def task() -> None:
-#     print(11111111111111111111)
-#     pass
+from server.tasks.v1.bolid.contacts import contacts_parse
+from server.tasks.v1.bolid.urls import url_contacts
+
+
+@shared_task()
+def task() -> None:
+    # Парсим контакты
+    contacts = contacts_parse(url=url_contacts)
+
+    pass
 
 # Парсим страничку целиком в файлик
 
@@ -23,16 +29,18 @@ from bs4 import BeautifulSoup
 # with open("index.html", "w") as file:
 #     file.write(src)
 
-with open("index.html") as file:
-    src = file.read()
-
-soup = BeautifulSoup(src, "lxml")
-all_products_hrefs = soup.find_all(class_="menu_left")
-for item in all_products_hrefs:
-    item_text = item.text
-    item_href = item.get("href")
-    print(f"{item.text}: {item_href}")
-
+#
+#
+# with open("index.html") as file:
+#     src = file.read()
+#
+# soup = BeautifulSoup(src, "lxml")
+# all_products_hrefs = soup.find_all(class_="menu_left")
+# for item in all_products_hrefs:
+#     item_text = item.text
+#     item_href = item.get("href")
+#     print(f"{item.text}: {item_href}")
+#
 
 
 # https://bolid.ru/production/orion/    #Общая инфа
