@@ -5,15 +5,12 @@ import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper">
       <NavBar />
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          {/* Edit <code>src/App.tsx</code> and save to reload. */}
-          Data Bank
-        </p>
-        {/* <a
+        <p>Data Bank</p>
+      </header>
+      {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -21,7 +18,7 @@ function App() {
         >
           Learn React
         </a> */}
-      </header>
+      {/* </header> */}
     </div>
   );
 }
