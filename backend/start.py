@@ -1,3 +1,5 @@
+import os.path
+
 import server
 import logging.config
 import traceback
@@ -6,6 +8,9 @@ from logging import Logger
 
 
 def logging_configure() -> Logger:
+    if not os.path.exists('logs'):
+        os.mkdir('logs')
+
     logging.config.fileConfig('etc/server_logging.ini')
     return logging.getLogger(__name__)
 

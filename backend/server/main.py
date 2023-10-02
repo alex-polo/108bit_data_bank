@@ -57,7 +57,6 @@ def run() -> None:
     logger.debug(f'Configuration API Server: {server_config}')
 
     database_config = get_database_config()
-    logger.debug(f'Configuration database: {database_config}')
 
     database.registry_database(database_config=database_config)
     uvicorn.run(
