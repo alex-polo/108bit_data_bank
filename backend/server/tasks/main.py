@@ -24,8 +24,6 @@ app.autodiscover_tasks()
 
 
 def set_scheduler_task(periodic_time: int) -> None:
-    # Выборка по бд
-
     app.conf.beat_schedule = {
         'task_bolid_data_collection': {
             'task': 'server.tasks.scheduler_tasks.tasks.generate_processing_resources_tasks',

@@ -1,1 +1,1 @@
-download
+from .loader import download
