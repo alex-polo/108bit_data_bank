@@ -1,12 +1,15 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
 import NavBar from './components/navbar/NavBar';
+import SideBarMenu from './components/sidebar/Sidebar';
+
+import './App.css';
 
 function App() {
   return (
     <div className="wrapper">
       <NavBar />
+      <SideBarMenu />
       <header className="App-header">
         <p>Data Bank</p>
       </header>
