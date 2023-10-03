@@ -7,7 +7,7 @@ from server.tasks.schemes import parser_list
 
 logger = logging.getLogger(__name__)
 from server.tasks.v1.bolid.parser import task as bolid_task
-
+from server.tasks.v1.argus_spectr import task as argus_task
 
 @shared_task
 def generate_processing_resources_tasks():

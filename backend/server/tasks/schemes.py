@@ -7,5 +7,10 @@ parser_list: List[SchemeParser] = [
         parser='server.tasks.v1.bolid.parser.task',
         name_task='bolid_parser_v1',
         is_enabled=True
-    )
+    ),
+    # (
+    #     parser='server.tasks.v1.bolid.parser.task',
+    #     name_task='bolid_parser_v1',
+    #     is_enabled=True
+    # ),
 ]
