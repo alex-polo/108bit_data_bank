@@ -3,7 +3,7 @@ import os
 from environs import Env
 
 from etc.server_settings import ALLOW_CREDENTIALS, ALLOW_METHODS, ALLOW_HEADERS, LOGGING_CONFIG as SERVER_LOGGING_CONFIG
-from etc.tasks_settings import CELERY_CONFIG, LOGGING_CONFIG as CELERY_LOGGING_CONFIG, RESOURCES_PARSING_TIME
+from etc.tasks_settings import CELERY_CONFIG, LOGGING_CONFIG as CELERY_LOGGING_CONFIG, SCHEDULER_TIME
 from server.config.classes import DatabaseConfig, ServerAPIConfig, CeleryConfig
 
 
@@ -44,5 +44,5 @@ def get_celery_config() -> CeleryConfig:
         backend=env.str('CELERY_BACKEND'),
         celeryconfig=f'etc.{CELERY_CONFIG}',
         logging_config=os.path.join('etc', CELERY_LOGGING_CONFIG),
-        resources_parsing_time=RESOURCES_PARSING_TIME
+        scheduler_time=SCHEDULER_TIME
     )

@@ -14,7 +14,15 @@ task_queues = (
 
 task_default_queue = 'default'
 
-task_routes = {'server.tasks.v1.*': {'queue': 'data_collection'}}
+task_routes = {
+    'server.tasks.v1.*': {'queue': 'data_collection'},
+    'server.tasks.scheduler_tasks.*': {'queue': 'default'}
+}
+
+# task_routes = {
+#     'server.tasks.v1.*': {'queue': 'data_collection', 'routing_key': 'task_data_collection'},
+#     'server.tasks.scheduler_tasks.*': {'queue': 'default', 'routing_key': 'task_default'}
+# }
 
 # task_routes = {
 #         'server.tasks.v1.*': {

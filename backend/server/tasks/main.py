@@ -5,9 +5,6 @@ import traceback
 from celery import Celery
 from celery.schedules import crontab
 
-import server.tasks.v1
-from resources.sites import sites_list
-
 from server.config import DatabaseConfig, CeleryConfig, get_celery_config, get_database_config
 from server.database import registry_database
 
@@ -26,22 +23,19 @@ app.config_from_object(celery_config.celeryconfig)
 app.autodiscover_tasks()
 
 
-# app.autodiscover_tasks(['server.tasks.v1'], related_name='tasks', force=True)
-
-
-def creating_periodic_tasks() -> None:
+def set_scheduler_task(periodic_time: int) -> None:
     # Выборка по бд
-    for resource in sites_list:
-        app.conf.beat_schedule = {
-            'task_bolid_data_collection': {
-                'task': resource.task,
-                'schedule': crontab(minute=f'*/{celery_config.resources_parsing_time}'),
-                'options': {
-                    'routing_key': 'task_data_collection',
-                    'priority': 10
-                },
+
+    app.conf.beat_schedule = {
+        'task_bolid_data_collection': {
+            'task': 'server.tasks.scheduler_tasks.tasks.generate_processing_resources_tasks',
+            'schedule': crontab(minute=f'*/{periodic_time}'),
+            'options': {
+                'routing_key': 'task_default',
+                'priority': 10
             },
-        }
+        },
+    }
 
 
 # При запуске celery выполняем
@@ -58,13 +52,24 @@ def setup_periodic_tasks(sender, **kwargs):
         if celery_type == 'BEAT':
             # Делаем синхронизацию коллекции с базой данных
 
-            if True:
-                # Если синхронизация завершилась успехом, делаем назначенные задачи
-                logger.info('Creating scheduled Tasks')
-                creating_periodic_tasks()
-                logger.info('Scheduled tasks created')
+            set_scheduler_task(periodic_time=celery_config.scheduler_time)
 
     except Exception as error:
         logger.error(error)
         logger.error(traceback.format_exc(limit=None, chain=True))
         logger.error('Configuration completed with errors')
+
+# def creating_periodic_tasks() -> None:
+#     Выборка по бд
+
+# for resource in sites_list:
+#     app.conf.beat_schedule = {
+#         'task_bolid_data_collection': {
+#             'task': resource.task,
+#             'schedule': crontab(minute=f'*/{celery_config.resources_parsing_time}'),
+#             'options': {
+#                 'routing_key': 'task_data_collection',
+#                 'priority': 10
+#             },
+#         },
+#     }

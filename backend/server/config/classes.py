@@ -26,4 +26,4 @@ class CeleryConfig:
     backend: str
     celeryconfig: str
     logging_config: str
-    resources_parsing_time: int
+    scheduler_time: int
