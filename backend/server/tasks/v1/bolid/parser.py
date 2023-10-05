@@ -21,6 +21,7 @@ async def main() -> None:
 
         # Парсим данные
 
+
     else:
         # Пишем ошибку в лог и в базу данных event
         data: ErrorValue = download_data.data
