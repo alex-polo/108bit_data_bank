@@ -21,6 +21,7 @@ async def main() -> None:
 
         # Парсим данные
 
+async def
 
     else:
         # Пишем ошибку в лог и в базу данных event
