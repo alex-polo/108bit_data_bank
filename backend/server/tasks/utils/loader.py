@@ -5,7 +5,6 @@ import aiohttp
 from server.tasks.classes import ReturnedValue, LoaderValue, ErrorValue
 
 
-
 async def download(url: str, headers: dict, timeout: int = 60, verify_ssl: bool = False) -> ReturnedValue:
     try:
         async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=verify_ssl)) as session:

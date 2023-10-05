@@ -1,11 +1,13 @@
 import asyncio
 import logging
+import traceback
 
 from celery import shared_task
 
-from server.tasks.classes import ReturnedValue, LoaderValue, ErrorValue
+from server.tasks.classes import ReturnedValue, LoaderValue, ErrorValue, ContactsData
 from server.tasks.utils import download
-from server.tasks.v1.bolid.urls import url_products
+from server.tasks.v1.bolid.contacts import contacts_parse
+from server.tasks.v1.bolid import urls
 from fake_useragent import UserAgent
 
 logger = logging.getLogger(__name__)
@@ -13,21 +15,36 @@ logger = logging.getLogger(__name__)
 useragent = UserAgent()
 
 async def main() -> None:
-    # Скачиваем данные
-    download_data: ReturnedValue = await download(url=url_products, headers=useragent.random)
-    if download_data.is_success:
-        data: LoaderValue = download_data.data
-        logger.info(f'Download Bolid data, response code: {data.response_code}')
 
-        # Парсим данные
+    headers = {
+        'User-Agent': useragent.random
+    }
 
-async def
-
+    # Получаем контакты
+    contacts: ReturnedValue = await contacts_parse(url=urls.url_contacts, headers=headers)
+    if contacts.is_success:
+        contacts_data: ContactsData = contacts.data
     else:
-        # Пишем ошибку в лог и в базу данных event
-        data: ErrorValue = download_data.data
-        logger.error(data.message)
-        logger.error(data.traceback)
+        error: ErrorValue = contacts.data
+        logger.error(error.message)
+        if error.traceback is not None:
+            logger.error(error.traceback)
+
+    # Получаем категории
+    # download_data: ReturnedValue = await download(url=url_products, headers=useragent.random)
+    # if download_data.is_success:
+    #     data: LoaderValue = download_data.data
+    #     logger.info(f'Download Bolid data, response code: {data.response_code}')
+    #
+    #     # Парсим данные
+    #
+    #
+    #
+    # else:
+    #     # Пишем ошибку в лог и в базу данных event
+    #     data: ErrorValue = download_data.data
+    #     logger.error(data.message)
+    #     logger.error(data.traceback)
 
 
 @shared_task()
@@ -37,5 +54,6 @@ def task() -> None:
         asyncio.run(main())
         logger.info('Bolid tasks is finished')
     except Exception as error:
-        pass
+        logger.error(error)
+        logger.error(traceback.format_exc(limit=None, chain=True))
 

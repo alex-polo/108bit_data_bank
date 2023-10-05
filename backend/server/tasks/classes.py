@@ -27,6 +27,16 @@ class CategoryData:
 
 
 @dataclass
+class ContactsData:
+    postal: Union[str, None]
+    region: Union[str, None]
+    locality: Union[str, None]
+    street: Union[str, None]
+    phone: Union[str, None]
+    mail: Union[str, None]
+
+
+@dataclass
 class ReturnedValue:
     is_success: bool
-    data: Union[ErrorValue, LoaderValue]
+    data: Union[ErrorValue, LoaderValue, ContactsData]
