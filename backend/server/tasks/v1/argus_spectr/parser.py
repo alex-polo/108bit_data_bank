@@ -22,7 +22,6 @@ async def main() -> None:
 
     # Получаем контакты
     contacts: ReturnedValue = await contacts_parse(url=urls.url_contacts, headers=headers)
-    print(contacts)
     if contacts.is_success:
         contacts_data: ContactsData = contacts.data
     else:

@@ -8,7 +8,6 @@ from server.tasks.utils import download
 
 logger = logging.getLogger(__name__)
 
-
 async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
     try:
         logger.info('Downloading Bolid contacts data')

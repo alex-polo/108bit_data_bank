@@ -72,7 +72,7 @@ sites_list: List[Resource] = [
         url='https://bastion-tech.ru',
         tag='#Bastion',
         field_tags=['#Системы_автоматики', '#Системы_безопасности'],
-        task='server.tasks.v1.bastion.parser.task',
+        task='server.tasks.v1.bastion_tech.parser.task',
         is_enabled=True
     ),
     Resource(
@@ -81,7 +81,7 @@ sites_list: List[Resource] = [
         url='https://argus-spectr.ru',
         tag='#Argus',
         field_tags=['#Системы_автоматики', '#Системы_безопасности'],
-        task='server.tasks.v1.argus.parser.task',
+        task='server.tasks.v1.argus_spect.parser.task',
         is_enabled=True
     ),
 ]

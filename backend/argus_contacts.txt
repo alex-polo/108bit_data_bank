@@ -1,0 +1,1461 @@
+<!doctype html>
+<html class="h-100" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <meta name="yandex-verification" content="bbfa29190ff1a755" />
+
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/safari-pinned-tab.svg" color="#d2030a">
+  <link rel="shortcut icon" href="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Аргус-Спектр">
+  <meta name="application-name" content="Аргус-Спектр">
+  <meta name="msapplication-TileColor" content="#d2030a">
+  <meta name="msapplication-TileImage" content="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#d2030a">
+  <meta property="og:image" content="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/logo-og.png" />
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+  <link rel="stylesheet" href="https://catalog.argus-spectr.ru/combine/616c3b2f8c3d55505edd10504d198bc4-1687250159" />
+         
+
+  <script>    
+  var myListFunctionAfterLoad = {}
+ </script>
+
+
+</head>
+<body class="d-flex flex-column h-100  " id="mainBody">
+
+
+
+ <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(93121207, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/93121207" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+ <style>
+    .block-shadow-top {
+        -webkit-box-shadow: 0 -4px 3px -3px rgba(31, 31, 31, 0.125);
+        -moz-box-shadow: 0 -4px 3px -3px rgba(31, 31, 31, 0.125);
+        box-shadow: 0 -4px 3px -3px rgba(31, 31, 31, 0.125);
+    }
+    
+    .block-shadow-top:hove {
+        -webkit-box-shadow: 0 -3px 2px -2px rgba(31, 31, 31, 0.15);
+        -moz-box-shadow: 0 -3px 2px -2px rgba(31, 31, 31, 0.15);
+        box-shadow: 0 -3px 2px -2px rgba(31, 31, 31, 0.15);
+    }
+    
+    .paper-raise-flatten:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 -12px 10px -10px rgba(31, 31, 31, 0.125);
+    }
+    
+    .paper-raise-flatten:hover {
+        border-color: #dedede;
+    }
+    
+    .paper-raise-flatten:hover:before {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    }
+</style>
+
+
+
+
+<header>
+    <!-- modal dialog -->
+    <div class="fixed-top">
+
+        <div class="up-navbar-info">
+            <div class="container d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-rowalign-content-sm-center  align-content-md-centerjustify-content-sm-center justify-content-md-center justify-content-lg-between  justify-content-xl-between">
+                <div class="up-navbar-info-item align-middle- py-1 py-sm-1 py-md-2 py-lg-1  py-xl-1 align-self-center">
+                    <i class="bi bi-telephone align-middle-"></i>&nbsp;<a href="tel:+78127037500" class="align-middle under-hover">+7(812) 703 7500</a> &nbsp; &nbsp;
+                    <i class="bi bi-envelope-paper"></i>&nbsp;<a href="mailto:mail@argus-spectr.ru" class="align-middle under-hover">mail@argus-spectr.ru</a>
+                </div>
+
+                <div class="up-navbar-title align-self-center py-1 py-sm-2 py-md-2 py-lg-0  py-xl-0">
+                    <a href="https://argus-spectr.ru/" target="_blank" class="no-under">WWW.ARGUS-SPECTR.RU</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-light navbar-expand bg-light box-shadow" id="headerMenu">
+            <div class="container d-flex justify-content-between">
+                <a href="/" class="navbar-brand d-flex align-items-left py-0" title="">
+                    <svg version="1.1" stroke-width="0" fill="currentColor" fill-rule="evenodd" viewBox="0 0 9500.54 1340.44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M0 670.22c9.45 11.2 19.02 22.29 28.72 33.25h500.86c16.47 19.77 33.58 39 51.29 57.64H81.83c21.83 22.72 44.21 44.9 67.14 66.52h500.31c22.36 20.07 45.49 39.3 69.34 57.64H213c26.63 22.92 53.92 45.09 81.83 66.52h519.62c33.48 20.88 68.07 40.13 103.67 57.65H374.11c33.8 23.26 68.39 45.44 103.75 66.51h606.05c112.75 35.58 232.79 54.76 357.3 54.76 124.51 0 244.55-19.18 357.31-54.76h606.05c35.34-21.06 69.94-43.25 103.74-66.51h-544c35.59-17.52 70.19-36.77 103.66-57.65h519.62c27.91-21.42 55.2-43.6 81.84-66.52H2163.8c23.85-18.34 46.97-37.57 69.34-57.64h500.31c22.93-21.62 45.33-43.79 67.14-66.52h-499.04c17.71-18.65 34.81-37.87 51.29-57.64h500.86c9.7-10.97 19.27-22.06 28.72-33.25-9.45-11.2-19.02-22.29-28.72-33.25h-500.86c-16.47-19.77-33.58-39-51.29-57.65h499.04c-21.82-22.72-44.21-44.9-67.14-66.52h-500.3c-22.36-20.07-45.5-39.29-69.35-57.64h505.63c-26.64-22.92-53.93-45.09-81.84-66.52h-519.62c-33.47-20.88-68.07-40.12-103.66-57.64h544c-33.8-23.26-68.39-45.45-103.74-66.51h-606.05c-112.76-35.58-232.79-54.76-357.31-54.76-124.51 0-244.55 19.18-357.31 54.76H477.86c-35.35 21.06-69.95 43.25-103.75 66.51h544c-35.59 17.52-70.18 36.77-103.66 57.64H294.83c-27.9 21.42-55.19 43.6-81.83 66.52h505.62c-23.85 18.34-46.97 37.57-69.34 57.64H148.97c-22.93 21.62-45.31 43.8-67.14 66.52h499.04c-17.71 18.65-34.81 37.87-51.29 57.65H28.72C19.02 647.94 9.45 659.02 0 670.22zm581.93 463.37c47 24.12 95.15 46.33 144.34 66.5h1429.87c49.19-20.18 97.35-42.39 144.35-66.5H581.93zm305.44 124.15c175.11 53.77 361.1 82.7 553.84 82.7s378.73-28.93 553.84-82.7H887.37zm1413.11-1050.9c-47-24.12-95.15-46.33-144.34-66.51H726.27c-49.19 20.18-97.33 42.39-144.34 66.51h1718.55zM1995.05 82.69c-175.12-53.76-361.1-82.7-553.84-82.7s-378.72 28.94-553.84 82.7h1107.68zM603.15 670.22c203.26 234.54 503.32 382.89 838.05 382.89 334.73 0 634.8-148.35 838.06-382.89C2076 435.68 1775.93 287.33 1441.2 287.33c-334.73 0-634.79 148.35-838.05 382.89zm376.23 208.7c85.37 42.29 177.37 73.2 274.03 90.79-41.71-45.39-67.17-105.95-67.17-172.46 0-140.81 114.15-254.96 254.96-254.96s254.97 114.15 254.97 254.96c0 66.51-25.46 127.07-67.19 172.46 96.66-17.59 188.66-48.51 274.05-90.79-60.18-251.19-232.88-458.63-461.83-566.08-228.95 107.45-401.64 314.89-461.82 566.08zm656.59-81.67c0-107.57-87.2-194.77-194.77-194.77-107.57 0-194.77 87.2-194.77 194.77 0 107.57 87.2 194.77 194.77 194.77 107.57 0 194.77-87.2 194.77-194.77zm1516.53-23.57 236.73-665.51h235.79l235.78 665.51h-209.16l-36.13-115.04h-216.77l-37.08 115.04H3152.5zm354.62-496.28-71.3 234.83h142.61l-71.3-234.83zm406.91 496.28V108.17h289.98c70.99 0 124.07 15.21 159.25 45.64 35.18 30.42 58.79 64.02 70.83 100.78 4.44 13.31 7.61 26.46 9.51 39.45 1.9 12.99 2.85 25.2 2.85 36.6 0 11.41-.95 23.61-2.85 36.6-1.9 12.99-5.07 26.15-9.51 39.46-11.41 36.76-34.86 70.51-70.35 101.25-35.49 30.74-88.73 46.11-159.72 46.11h-94.12v219.62h-195.85zm195.85-519.1v153.07h43.73c27.25 0 47.22-4.44 59.9-13.31 12.68-8.87 21.23-18.38 25.67-28.52 2.53-6.97 4.12-13.63 4.75-19.97.63-6.34.95-11.41.95-15.21 0-3.8-.16-7.61-.48-11.41-.32-3.8-.79-7.6-1.43-11.41-3.17-13.31-11.09-25.51-23.77-36.6s-34.54-16.64-65.6-16.64h-43.73zm423.08 519.1V108.17h408.82v159.72h-212.96v505.79h-195.85zm581.85 0 90.32-183.49-250.04-482.02h229.13l124.55 268.11 102.68-268.11h212.02l-299.48 665.51h-209.16zm1061.97-30.42c-13.31 8.87-26.62 16.16-39.93 21.87-13.31 5.7-26.62 10.46-39.93 14.26-17.11 5.07-34.07 8.4-50.87 9.98-16.79 1.58-33.12 2.38-48.96 2.38l-9.51.95c-93.81-.63-173.98-31.69-240.54-93.17-66.55-61.48-99.83-147.68-99.83-258.6 0-115.99 34.86-203.61 104.58-262.88 69.72-59.26 147.36-88.89 232.93-88.89h9.51c11.41 0 23.14.63 35.18 1.9s24.4 3.17 37.08 5.71c19.01 3.8 37.87 9.51 56.57 17.11 18.7 7.6 36.6 17.11 53.72 28.52v193h-9.51c-3.8-4.44-8.24-9.19-13.31-14.26s-10.78-10.46-17.11-16.16c-13.94-12.04-31.22-23.13-51.82-33.27-20.6-10.14-44.21-15.53-70.83-16.16-51.97 1.27-92.54 20.76-121.69 58.47-29.15 37.71-43.73 81.92-43.73 132.63 0 57.04 16.32 100.93 48.96 131.68 32.64 30.74 71.46 46.74 116.47 48.01 33.59-1.27 63.22-9.19 88.89-23.77s47.06-30.74 64.18-48.49h9.51v189.2zm672.17-102.68v74.16c-5.07 3.8-12.52 9.03-22.34 15.69s-22.02 13.47-36.6 20.44c-20.91 10.14-46.74 19.49-77.48 28.05-30.74 8.56-66.08 12.84-106.01 12.84-106.48 0-190.3-35.02-251.47-105.06-61.16-70.04-91.75-151.96-91.75-245.76 0-108.38 34.7-194.11 104.11-257.17 69.4-63.07 149.11-94.6 239.11-94.6 34.23 0 71.78 4.75 112.66 14.26 40.88 9.51 84.14 31.37 129.78 65.6v75.11c-31.06-30.42-66.55-54.98-106.48-73.68-39.93-18.7-84.61-28.05-134.05-28.05-81.76 0-147.36 29.47-196.8 88.42s-76.06 123.59-79.86 193.95v16.16c0 75.43 24.88 144.04 74.63 205.83 49.76 61.8 116.78 92.7 201.08 92.7 45.63 0 89.37-9.03 131.2-27.1 41.83-18.06 78.59-41.99 110.29-71.78zm110.28 133.1V108.17h512.44v665.51h-64.65V161.41h-383.14v612.27h-64.65zm679.77 0V108.17h356.53v53.24h-291.88v212.96h281.42v53.24h-281.42v292.83h291.88v53.24H7639zm493.43 0V108.17h64.65v308.99l297.58-308.99h79.86l-315.64 322.3 322.3 343.21h-86.52l-297.58-323.25v323.25h-64.65zm647.45 0V161.41h-177.79v-53.24h420.22v53.24h-177.79v612.27h-64.65zm336.56 0V108.17h184.44c11.41 0 24.09.63 38.03 1.9 13.94 1.27 28.52 3.8 43.73 7.6 29.16 8.24 56.09 24.56 80.81 48.96 24.72 24.4 37.08 63.54 37.08 117.41s-12.2 93.17-36.6 117.89c-24.4 24.72-51.5 41.2-81.29 49.44-14.58 3.8-29.15 6.34-43.73 7.6-14.58 1.27-27.25 1.9-38.03 1.9h-119.79v312.79h-64.65zm64.65-612.27v246.24h116.94c7.61 0 16.32-.48 26.15-1.43 9.83-.95 20.12-2.69 30.9-5.23 19.65-5.7 37.71-17.27 54.19-34.7 16.48-17.43 24.72-44.84 24.72-82.24 0-37.39-8.4-64.65-25.2-81.76-16.79-17.11-35.02-28.52-54.67-34.23-10.14-2.54-20.12-4.28-29.95-5.23-9.83-.95-18.54-1.43-26.15-1.43h-116.94z" class="fil0"/>
+                        <path d="M3258.03 1189.99h-51.14v116.15h-50.34v-275.61h50.34v115.37h52.72l79.05-115.37h54.28l-94.01 133.48 97.54 142.13h-57.81l-80.63-116.15zm6194.03-116.15h-136.49l.4 232.3h-50.33v-275.61h186.82l-.4 43.31zm-1119.07 236.23c-28.05 0-53.37-6.11-75.91-18.3-22.56-12.21-40.25-29.14-53.1-50.79-12.84-21.66-19.27-45.87-19.27-72.64 0-26.77 6.42-50.99 19.27-72.64 12.86-21.66 30.55-38.59 53.1-50.8 22.54-12.2 47.86-18.3 75.91-18.3 28.06 0 53.36 6.1 75.92 18.3 22.54 12.21 40.24 29.07 53.09 50.6 12.86 21.53 19.27 45.8 19.27 72.84 0 27.03-6.41 51.31-19.27 72.83-12.86 21.53-30.55 38.38-53.09 50.6-22.56 12.2-47.86 18.3-75.92 18.3zm0-44.89c18.36 0 34.87-4.13 49.57-12.4 14.69-8.27 26.22-19.81 34.61-34.64 8.39-14.83 12.58-31.43 12.58-49.8 0-18.38-4.19-34.98-12.58-49.81-8.39-14.82-19.92-26.38-34.61-34.64-14.7-8.27-31.21-12.4-49.57-12.4-18.35 0-34.87 4.14-49.56 12.4-14.69 8.26-26.23 19.82-34.62 34.64-8.39 14.84-12.58 31.43-12.58 49.81 0 18.37 4.19 34.97 12.58 49.8 8.39 14.83 19.93 26.38 34.62 34.64 14.69 8.27 31.2 12.4 49.56 12.4zm-932.22-234.66v275.61h-50.36v-232.3h-108.55l-2.37 68.9c-1.31 38.59-4.45 69.88-9.44 93.91-4.97 24.01-12.98 42.25-23.99 54.72-11.01 12.47-26.22 18.7-45.63 18.7-6.82 0-16.12-1.31-27.91-3.93l3.53-44.49c3.42 1.05 7.35 1.57 11.81 1.57 16 0 27.34-9.51 34.02-28.55 6.69-19.03 10.82-49.01 12.39-89.96l3.94-114.18h202.57zm-1087.61 211.83H6175.5l-27.15 63.78h-52.71l123.9-275.61h50.34l124.3 275.61h-53.49l-27.53-63.78zm-16.91-40.17-51.92-120.48-51.53 120.48h103.45zm-923.2-128.35h-91.25v232.3h-50.73v-232.3h-90.86v-43.31h232.84v43.31zm-1070.37 168.52h-137.66l-27.15 63.78h-52.71l123.9-275.61h50.34l124.3 275.61h-53.49l-27.53-63.78zm-16.91-40.17-51.92-120.48-51.53 120.48h103.45z" class="fil1 str0"/>
+                      </svg>
+                </a>
+                <div class="collapse navbar-collapse justify-content-end ml-0 ml-md-3">
+
+                    
+                    <form class="d-flex flex-grow-1  justify-content-end" action="https://catalog.argus-spectr.ru/search" method="get">
+                        <div class="search-top-wrapper search-top mt-1 szzz">
+                            <input class="search-top-input search-top szzz" type="text" placeholder="Поиск" name="q" autocomplete="on" />
+                            <i class="bi bi-search in-top-search-btn search-top" id="zzzz">
+                                                    </i>
+                        </div>
+                    </form>
+                    <div class="navbar-text d-none d-md-block">
+
+                        <a href="/" class="mr-2 ml-2 opacity-75">
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                        </svg>
+
+                        </a>
+
+
+
+
+                    </div>
+
+
+
+                    <style>
+                        .search-top-wrapper {
+                            position: relative;
+                            /*margin-right: 5px;*/
+                            background: transparent;
+                            /*border-radius: 20px;*/
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                            transition: 750ms ease;
+                        }
+                        
+                        .search-top-wrapper.focused {
+                            width: 100%;
+                        }
+                        
+                        .search-top-wrapper.focused input {
+                            padding: 5px 30px 5px 10px;
+                            background: rgba(194, 203, 212, 0.25);
+                            border-radius: 4px;
+                            width: 100%;
+                        }
+                        
+                        .search-top-wrapper input {
+                            background: rgba(194, 203, 212, 0);
+                            /*transparent;*/
+                            border: 0;
+                            /*color: white;*/
+                            outline: none;
+                            height: 40px;
+                            width: 0;
+                            overflow: hidden;
+                            /*font-weight: 100;*/
+                            font-family: var(--font-family-t) !important;
+                            color: var(--bs-body-color) !important;
+                            font-weight: var(--bs-c-font-weight) !important;
+                            font-size: 16px !important;
+                            letter-spacing: 0.1px !important;
+                            transition: 775ms ease;
+                        }
+                        
+                        .search-top-wrapper input::-moz-placeholder {
+                            color: var(--gray) !important;
+                        }
+                        
+                        .search-top-wrapper input:-ms-input-placeholder {
+                            color: var(--gray) !important;
+                        }
+                        
+                        .search-top-wrapper input::placeholder {
+                            color: var(--gray) !important;
+                        }
+                        
+                        .search-top-wrapper i {
+                            position: absolute;
+                            color: var(--primary);
+                            font-size: 20px;
+                            top: 20px;
+                            right: 5px;
+                            transform: translateY(-50%);
+                        }
+                    </style>
+                    <script>
+                        let searchWrapper = document.querySelector('.search-top-wrapper'),
+                            searchInput = document.querySelector('.search-top-input');
+
+                        document.addEventListener('click', e => {
+                          //  console.log(e.target.className);
+                          //  console.log(e.target.className.indexOf('search-top'));
+                          //  console.log(~e.target.className.indexOf('search-top'));
+                            if (~e.target.className.indexOf('search-top')) {
+                                searchWrapper.classList.add('focused');
+                                searchInput.focus();
+                            } else {
+                                searchWrapper.classList.remove('focused');
+                            }
+                        });
+                    </script>
+
+                                      </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- main content --><main class="flex-shrink-0">
+  <div id="main-content" class="pb-4 ">
+
+
+
+    <section class="container-fliud breadcrumb-list ar-separate-top-3">
+
+    <div class="container" >
+        
+
+<a class="mb-2 mt-3 mt-md-4 mt-lg-0 nav-bar-toggler d-flex align-items-center bg-primary- btn btn-primary shadow-sm- rounded p-1 " style="  position: fixed;z-index: 800;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="d-flex text-white-">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            </div>
+  
+          <div class="d-flex ml-2 p`r-1 align-self-center- text-white-">МЕНЮ</div>
+        </a>
+
+    </div>
+
+    <nav class="container sugg- pt-5 mt-2 mt-md-3 mt-lg-2" aria-label="breadcrumb">
+
+        <ol class="breadcrumb justify-content-start- pl-0 pr-0">
+        
+                                                                                                                                                                                                    
+                                                                      <li class="breadcrumb-item  "><a class="breadcrumb-link" href="https://catalog.argus-spectr.ru/catalog" title="Каталог">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                                        </svg>                                        
+                                        </a></li>
+                                                            
+                                                                                                                                                                                
+                                                                <li class="breadcrumb-item  "><a class="breadcrumb-link" href="https://catalog.argus-spectr.ru/catalog/streletz-integral"> ИСБ &quot;Стрелец-Интеграл&quot;</a></li>
+                                                            
+                                                                                                                                                                                
+                                                                <li class="breadcrumb-item  "><a class="breadcrumb-link" href="https://catalog.argus-spectr.ru/catalog/control-indication"> Приборы приёмно-контрольные управления и индикации</a></li>
+                                                            
+                                                                                                                                                                                
+                                                                <li class="breadcrumb-item active" aria-current="page"> Приёмно-контрольные приборы </li>
+                                                        
+                                                                                </ol>
+    </nav>
+        
+</section>
+
+
+
+<style>
+.btn-toggle  {
+  display: inline-flex;
+}
+.btn-toggle-go  {
+  display: inline;
+}
+.btn-toggle , .btn-toggle-go {
+  align-items: center;
+  padding: .125rem 0 .125rem .125rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+ 
+}
+.btn-toggle::before {
+  width: 1.125em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' stroke='currentColor' stroke-width='1' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' /%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+.btn-toggle-nav  {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: .25rem;
+  text-decoration: none;
+}
+
+.btn-toggle.btn-no-child::before {
+  content: '';
+}
+
+</style>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header bg-light">
+    <h2 class="offcanvas-title text-primary" id="offcanvasExampleLabel">Каталог</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+   
+    <ul class="list-unstyled ps-0">
+                                      
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  link-primary active btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-47" aria-expanded="true"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/streletz-integral" target="" class="btn-toggle-go nav-link-  link-primary active"> 
+        ИСБ &quot;Стрелец-Интеграл&quot;
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse show" id="cat-node-47">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  link-primary active btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-4" aria-expanded="true"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/control-indication" target="" class="btn-toggle-go nav-link-  link-primary active"> 
+        Приборы приёмно-контрольные управления и индикации
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse show" id="cat-node-4">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/control-panels" target="" class="btn-toggle-go nav-link-  link-primary active"> 
+        Приёмно-контрольные приборы
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/S2-control-indication" target="" class="btn-toggle-go nav-link- "> 
+        Устройства управления и индикации (S2)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/functional-units-s2" target="" class="btn-toggle-go nav-link- "> 
+        Функциональные блоки (S2)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-5" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-streletz-pro" target="" class="btn-toggle-go nav-link- "> 
+        Радио &quot;Стрелец-ПРО&quot;
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-5">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-expanders" target="" class="btn-toggle-go nav-link- "> 
+        Радиорасширители
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-control-indication" target="" class="btn-toggle-go nav-link- "> 
+        Устройства управления и индикации
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-fire-detectors" target="" class="btn-toggle-go nav-link- "> 
+        Пожарные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-annunciators" target="" class="btn-toggle-go nav-link- "> 
+        Устройства оповещения
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-fire-automatics" target="" class="btn-toggle-go nav-link- "> 
+        Устройства дымоудаления и пожаротушения
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-security-detectors" target="" class="btn-toggle-go nav-link- "> 
+        Охранные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-technological-detectors" target="" class="btn-toggle-go nav-link- "> 
+        Технологические датчики
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radio-explosion-proof" target="" class="btn-toggle-go nav-link- "> 
+        Взрывозащищённые устройства
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                                                    
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="/catalog/software/streletz-cloud" target="" class="btn-toggle-go nav-link- "> 
+        Облачный сервис Streletz-Cloud
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-85" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/wired-spektr" target="" class="btn-toggle-go nav-link- "> 
+        Провод &quot;СПЕКТР&quot;
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-85">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                           
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-9" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/power-units-mounting-cases" target="" class="btn-toggle-go nav-link- "> 
+        Блоки питания / Шкафы монтажные
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-9">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/power-supply" target="" class="btn-toggle-go nav-link- "> 
+        Блоки и элементы питания
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/mounting-cases" target="" class="btn-toggle-go nav-link- "> 
+        Шкафы монтажные
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/сommunicators" target="" class="btn-toggle-go nav-link- "> 
+        Объектовые коммуникаторы
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/software" target="" class="btn-toggle-go nav-link- "> 
+        Программное обеспечение
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                              
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="/catalog/software/streletz-cloud" target="" class="btn-toggle-go nav-link- "> 
+        Облачный сервис Streletz-Cloud
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/accessory" target="" class="btn-toggle-go nav-link- "> 
+        Дополнительно
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                     
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-12" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/out-of-production" target="" class="btn-toggle-go nav-link- "> 
+        Снято с производства
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-12">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                                              
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-49" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/streletz-integral-old" target="" class="btn-toggle-go nav-link- "> 
+        ИСБ &quot;Стрелец-Интеграл&quot; (архив)
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-49">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/strelec-pro-old" target="" class="btn-toggle-go nav-link- "> 
+        Радио: &quot;Стрелец-ПРО&quot; (архив)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-36" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Радио: &quot;Стрелец&quot; (архив)
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-36">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/pku-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Приемно-контрольные устройства
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/control-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Устройства управления и индикации
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/fire-detectors-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Пожарные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/security-detectors-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Охранные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/annunciators-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Оповещение
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/in-out-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Блоки входные и исполнительные
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/access-control-streletz-old" target="" class="btn-toggle-go nav-link- "> 
+        Контроль доступа
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                           
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-50" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/provod-s2-i-sl240" target="" class="btn-toggle-go nav-link- "> 
+        Провод: &quot;S2&quot; и &quot;СЛ240&quot; (архив)
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-50">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/integral-control-old" target="" class="btn-toggle-go nav-link- "> 
+        Приёмно-контрольные приборы и устройства управления
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/in-out-S2-old" target="" class="btn-toggle-go nav-link- "> 
+        Модули входные и исполнительные (S2)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/sl240-fire-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Пожарные извещатели (СЛ240)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/integral-annunciators-old" target="" class="btn-toggle-go nav-link- "> 
+        Оповещение (СЛ240)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/sl240-in-out-old" target="" class="btn-toggle-go nav-link- "> 
+        Модули входные и исполнительные (СЛ240)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/SL240-security-detectors" target="" class="btn-toggle-go nav-link- "> 
+        Охранные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/integral-other-old" target="" class="btn-toggle-go nav-link- "> 
+        Дополнительно
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-64" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/security-fire-devices" target="" class="btn-toggle-go nav-link- "> 
+        Пожарные и охранно-пожарные приборы
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-64">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/akkord-512" target="" class="btn-toggle-go nav-link- "> 
+        Аккорд-512
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/spektr-8" target="" class="btn-toggle-go nav-link- "> 
+        Спектр-8
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/set" target="" class="btn-toggle-go nav-link- "> 
+        Сеть
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/raduga-2a" target="" class="btn-toggle-go nav-link- "> 
+        Радуга-2А
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/raduga-4a" target="" class="btn-toggle-go nav-link- "> 
+        Радуга-4А
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/raduga-3" target="" class="btn-toggle-go nav-link- "> 
+        Радуга-3 (Аврора)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/raduga-240" target="" class="btn-toggle-go nav-link- "> 
+        Радуга-240
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/orfey" target="" class="btn-toggle-go nav-link- "> 
+        Орфей
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/security-fire-dev-other" target="" class="btn-toggle-go nav-link- "> 
+        Остальное
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-54" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/security-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Охранные извещатели
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-54">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/IR-volumetric-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Инфракрасные объёмные
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/IR-surface-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Инфракрасные типа &quot;Штора&quot;
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/acoustic-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Акустические
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/microwave-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Радиоволновые
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/IR+acoustic-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Комбинированные (ИК + АК)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/IR-MW-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Комбинированные (ИК + СВЧ)
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/outdoors-mw-old" target="" class="btn-toggle-go nav-link- "> 
+        Уличные радиоволновые
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/fire-sensors-old" target="" class="btn-toggle-go nav-link- "> 
+        Пожарные извещатели
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/radioknopka" target="" class="btn-toggle-go nav-link- "> 
+        РСТС &quot;Радиокнопка&quot;
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <a class="nav-link-  btn-toggle align-items-center- " 
+        data-bs-toggle="collapse" 
+        data-bs-target="#cat-node-74" aria-expanded="false"></a>
+            <a href="https://catalog.argus-spectr.ru/catalog/monitoring-old" target="" class="btn-toggle-go nav-link- "> 
+        Мониторинговые системы
+      </a>
+    </div>
+
+
+
+   
+      <div class="collapse " id="cat-node-74">
+        <ul class="btn-toggle-nav list-unstyled ps-0">
+                                                        
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/spi-telefon-gsm-gprs-ip" target="" class="btn-toggle-go nav-link- "> 
+        СПИ по телефону, GSM/GPRS, IP
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/rspi-argon" target="" class="btn-toggle-go nav-link- "> 
+        РСПИ &quot;Аргон&quot;
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/rspi-streletz-argon" target="" class="btn-toggle-go nav-link- "> 
+        РСПИ &quot;Стрелец-Аргон&quot;
+      </a>
+    </div>
+
+
+
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/atlas-20" target="" class="btn-toggle-go nav-link- "> 
+        Атлас-20
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                                                  
+  <li class="mb-1 ml-1 ">
+    <div class="d-flex">
+              <span class="btn-toggle btn-no-child"></span>
+            <a href="https://catalog.argus-spectr.ru/catalog/other-old" target="" class="btn-toggle-go nav-link- "> 
+        Дополнительное оборудование
+      </a>
+    </div>
+
+
+
+  </li> 
+                                     
+        </ul>
+      </div>
+  </li> 
+                                                   </ul>
+    </div>
+  </div>
+</div>
+
+                              
+
+
+            
+
+
+
+    <section class="container-fluid ar-section-container text-center ar-separate-top-2 ar-section-bottom-shadow-">
+        <div class="container ">
+            <div class="row">
+            <div class="col-12">     
+                <h1 class="ar-title-block-level-2  ar-separate-bottom-3">Приёмно-контрольные приборы</h1> 
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+      
+
+        
+
+
+                                                            
+
+
+  
+    <section class="container-fluid ar-section-container ar-separate-top-1 ar-bgcolor-bg-color-0 ar-separate-bottom-  ">
+        <div class="container  ">
+                            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 mx-auto  mb-5 "><div class="row">
+
+
+                             
+                                                     
+<div class="col-md-6 col-sm-12 px-3 py-3">
+<a href="https://catalog.argus-spectr.ru/catalog/control-panels/panel-3-pro" target="" class="row align-items-center h-100 p-3 shadow-block text-decoration-none text-reset shadow-lg2-">
+    <div class="col-md-7 col-sm-12">
+        <h4 class="ar-title-block-level-4  ar-separate-bottom-3" title="card_catalog_prod_info">
+                Панель-3-ПРО
+        </h4>
+        Контроллер радиоканальных и проводных устройств
+                
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <div class="card- text-bg-light- mx-auto text-center">
+                    
+                                                                        <img data-src="https://catalog.argus-spectr.ru/storage/temp/public/3cc/c8f/50a/thumb_307_0_400_0_0_fit__400.jpg" class="img-fluid lazyload lazyload" alt="Панель-3-ПРО" srcset="https://catalog.argus-spectr.ru/storage/temp/public/3cc/c8f/50a/thumb_307_0_400_0_0_fit__400.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
+                                                
+            
+    </div> 
+    </div>
+</a>
+</div>                        
+                             
+                                                     
+<div class="col-md-6 col-sm-12 px-3 py-3">
+<a href="https://catalog.argus-spectr.ru/catalog/control-panels/panel-2-pro" target="" class="row align-items-center h-100 p-3 shadow-block text-decoration-none text-reset shadow-lg2-">
+    <div class="col-md-7 col-sm-12">
+        <h4 class="ar-title-block-level-4  ar-separate-bottom-3" title="card_catalog_prod_info">
+                Панель-2-ПРО
+        </h4>
+        Контроллер радиоканальных и проводных устройств
+                
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <div class="card- text-bg-light- mx-auto text-center">
+                    
+                                                                        <img data-src="https://catalog.argus-spectr.ru/storage/temp/public/1c7/612/3ff/thumb_178_0_400_0_0_fit__400.jpg" class="img-fluid lazyload lazyload" alt="Панель-2-ПРО" srcset="https://catalog.argus-spectr.ru/storage/temp/public/1c7/612/3ff/thumb_178_0_400_0_0_fit__400.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
+                                                
+            
+    </div> 
+    </div>
+</a>
+</div>                        
+                             
+                                                     
+<div class="col-md-6 col-sm-12 px-3 py-3">
+<a href="https://catalog.argus-spectr.ru/catalog/control-panels/panel-1-pro" target="" class="row align-items-center h-100 p-3 shadow-block text-decoration-none text-reset shadow-lg2-">
+    <div class="col-md-7 col-sm-12">
+        <h4 class="ar-title-block-level-4  ar-separate-bottom-3" title="card_catalog_prod_info">
+                Панель-1-ПРО
+        </h4>
+        Контроллер радиоканальных устройств
+                
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <div class="card- text-bg-light- mx-auto text-center">
+                    
+                                                                        <img data-src="https://catalog.argus-spectr.ru/storage/temp/public/962/2db/925/thumb_336_0_400_0_0_fit__400.jpg" class="img-fluid lazyload lazyload" alt="Панель-1-ПРО" srcset="https://catalog.argus-spectr.ru/storage/temp/public/962/2db/925/thumb_336_0_400_0_0_fit__400.jpg 400w" sizes="(max-width: 400px) 100vw, 400px">
+                                                
+            
+    </div> 
+    </div>
+</a>
+</div>                        
+                     
+                </div></div>
+            </div>
+        </div>
+    </section>
+                                                    </div>
+</main>
+
+    <!-- main content -->
+  <!-- bottom -->
+
+
+  
+
+<footer class="footer mt-auto py-5 bg-light">
+    <div class="container text-center">
+        <p class="pt-2 pb-1" style="line-height: 2;" >
+            <a href="https://youtube.com/user/StreletzTV" 	class="float-shadow px-1" target="_blank"><i class="fab fa-youtube 	fa-2x"></i></a>
+            <a href="https://t.me/argus_spectr" 			class="float-shadow px-1" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+            <a href="https://t.me/argus_chat" 			class="float-shadow px-1" target="_blank"><i class="fas fa-comment-dots fa-2x"></i></a>
+            <a href="https://vk.com/argus_spectr" 			class="float-shadow px-1" target="_blank"><i class="fab fa-vk       fa-2x"></i></a>
+        </p>
+        <div class="mb-2"><a href="https://old-catalog.argus-spectr.ru/" class="text-reset- asAnimUnder fs-6">Перейти на старую версию каталога</a></div>
+
+        <p class="px-sm-2 px-md-0">
+        <div class="mb-2"><a href="https://educ.argus-spectr.ru/" class="text-reset">Бесплатное обучение, консультации</a></div>
+                &copy; 2019-2023 АРГУС-СПЕКТР<br />
+        197342, Санкт-Петербург, ул. Сердобольская, 65<br />
+        Тел.: <a href="tel:+78127037500" class="text-reset">+7(812) 703 7500</a>, 
+        факс: <a href="tel:+78127037501" class="text-reset">+7(812) 703 7501</a><br />
+        <a href="mailto:mail@argus-spectr.ru" class="text-reset">mail@argus-spectr.ru</a>
+        </p>
+    </div>
+     <div class="d-none"><a href="mailto:s.pamov@argus-spectr.ru">s.pamov@argus-spectr.ru</a></div>
+</footer> 
+
+
+<script src="/themes/lzaplata-bootstrap-5-sass/assets/argus22/assets/favicons/app.js"></script>
+
+  <script src="https://catalog.argus-spectr.ru/combine/ef7e80468701cad63c947d2d2fbac5d9-1687280204"></script>
+  <script src="/modules/system/assets/js/framework.combined-min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="/modules/system/assets/css/framework.extras.css">
+
+  
+  
+
+ 
+
+
+  
+
+  <script>
+      AOS.init({
+      });
+    (function(){
+      $.ripple(".btn-primary,.btn-secondary", {
+        debug: false, // Turn Ripple.js logging on/off
+        on: 'mouseenter', // The event to trigger a ripple effec
+        opacity: 0.3, // The opacity of the ripple
+        color: "auto", // Set the background color. If set to "auto", it will use the text color
+        multi: true, // Allow multiple ripples per element
+        duration: 0.5, // The duration of the ripple
+        // Filter function for modifying the speed of the ripple
+        rate: function (pxPerSecond) {
+          return pxPerSecond;
+        },
+        easing: 'ease-in-out' // The CSS3 easing function of the ripple
+      });
+      //$('.spec-item,.fs-5,.main-title-block-level-1').attr('data-aos','fade-left');
+      //$('.main-title-block-level-4,.wow,.breadcrumb-item,.navbar-brand').attr('data-aos','fade-right');
+
+
+    })();
+  </script>
+  
+  
+  
+            
+            
+         
+
+<script>
+
+// To Section
+const navLinks = document.querySelectorAll('a[href="#prodAllDocs"]');
+
+
+Array.from(navLinks).forEach(navLink => {
+  const href = navLink.getAttribute('href');
+  const section = document.querySelector(href);
+  const offset = 150 + 20; // nav and offset
+
+  navLink.onclick = e => {
+    // get body position
+    const bodyRect = document.body.getBoundingClientRect().top;
+    // get section position relative
+    const sectionRect = section.getBoundingClientRect().top;
+    // subtract the section from body
+    const sectionPosition = sectionRect - bodyRect;
+    // subtract offset
+    const offsetPosition = sectionPosition - offset;
+//console.log('offsetPosition '+offsetPosition+' sectionRect '+sectionRect);
+    e.preventDefault();
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth' });
+
+  };
+});
+
+
+</script>
+
+</body>
+</html>
