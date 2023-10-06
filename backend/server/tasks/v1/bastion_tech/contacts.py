@@ -18,11 +18,11 @@ async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
 
             soup = BeautifulSoup(download_data.content, 'html.parser')
             items = soup.find('div', class_='block dark lg:hidden bg-dark-primary')
-            addr = soup.find('div', class_='custom-markdown')
-            # item = addr.find_all('p', )
+            addr = items.find('div', class_='custom-markdown')
+            # item = addr.find_all('p')
             print(addr)
 
-            # postal = item.find_all('span')[1].text
+                      # postal = item.find_all('span')[1].text
             # print(postal)
 
             # region = item.find('span', {'itemprop': 'addressRegion'}).text
