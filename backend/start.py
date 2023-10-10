@@ -1,7 +1,5 @@
 import os.path
 
-from fake_useragent import UserAgent
-
 import server
 import logging.config
 import traceback
