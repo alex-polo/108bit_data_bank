@@ -10,23 +10,27 @@ logger = logging.getLogger(__name__)
 
 async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
     try:
-        logger.info('Downloading Argus contacts data')
+        logger.info('Downloading Parsec contacts data')
         response: ReturnedValue = await download(url=url, headers=dict())
         if response.is_success:
-            logger.info('Download Argus complete')
+            logger.info('Download Parsec complete')
             download_data: LoaderValue = response.data
 
-            with open('argus_contacts.txt', 'w') as file:
-                file.write(download_data.content)
+            postal: str = '107553'
+            region: str = 'Москва'
+            locality = None
+            street: str = 'ул. Большая Черкизовская, д. 24А, стр. 1, 7-й эт.'
+            phone_1: str = '8 800 333-14-98'
+            phone_2: str = '+7 495 565-31-12'
+            mail: str = 'info@parsec.ru'
 
             soup = BeautifulSoup(download_data.content, 'html.parser')
-            # items = soup.find_all('span', {'data': '33kqh-0-0'})
-            # addr = soup.find('div', class_='col ul-col col-xs-12 col-sm-12 col-md-6')
-            # item = addr.find('div', class_='public-DraftStyleDefault-block public-DraftStyleDefault-ltr')
+            items = soup.find('span', class_='common contacts ')
+            addr = items.find('div', class_='address')
+            div_block = addr.find_all('p').parent
+            text: str = div_block.p.text
 
-
-            # postal = item.find_all('span')[1].text
-            # print(postal)
+            print(text)
 
             # region = item.find('span', {'itemprop': 'addressRegion'}).text
             # locality = item.find('span', {'itemprop': 'addressLocality'}).text
@@ -52,7 +56,7 @@ async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
 
         else:
             error_data: ErrorValue = response.data
-            error_data.message = f'Parsing contacts for Argus is uncompilable, {error_data.message}'
+            error_data.message = f'Parsing contacts for Parsec is uncompilable, {error_data.message}'
             return ReturnedValue(
                 is_success=False,
                 data=error_data
@@ -62,7 +66,7 @@ async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
         return ReturnedValue(
             is_success=False,
             data=ErrorValue(
-                message=f'Parsing contacts for Argus is uncompilable, error: {str(error)}',
+                message=f'Parsing contacts for Parsec is uncompilable, error: {str(error)}',
                 traceback=traceback.format_exc(limit=None, chain=True)
             )
         )

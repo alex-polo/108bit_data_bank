@@ -24,6 +24,7 @@ async def main() -> None:
     contacts: ReturnedValue = await contacts_parse(url=urls.url_contacts, headers=headers)
     if contacts.is_success:
         contacts_data: ContactsData = contacts.data
+        print(contacts_data)
     else:
         error: ErrorValue = contacts.data
         logger.error(error.message)

@@ -20,10 +20,10 @@ async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
                 file.write(download_data.content)
 
             soup = BeautifulSoup(download_data.content, 'html.parser')
-            items = soup.find_all('span', class_='DraftEditor-root')
-            addr = items.find_all('div', class_='_17fgIIn___block normal')
+            items = soup.find('div', class_='public-DraftStyleDefault-block public-DraftStyleDefault-ltr')
+            # addr = items.find_all('div', class_='_17fgIIn___block normal')
             # item = addr.find('div', class_='public-DraftStyleDefault-block public-DraftStyleDefault-ltr')
-            print(addr)
+            print(items)
 
             # postal = item.find_all('span')[1].text
             # print(postal)

@@ -17,10 +17,14 @@ async def contacts_parse(url: str, headers: dict) -> ReturnedValue:
             download_data: LoaderValue = response.data
 
             soup = BeautifulSoup(download_data.content, 'html.parser')
-            items = soup.find('div', class_='block dark lg:hidden bg-dark-primary')
-            addr = items.find('div', class_='custom-markdown')
+            items = soup.find('div', class_='mb-3 relative z-10')
+
+            with open('bastion.txt', 'w') as file:
+                file.write(download_data.content)
+
+            # addr = items.find('div', class_='text-white relative z-10 mb-3')
             # item = addr.find_all('p')
-            print(addr)
+            print(items)
 
                       # postal = item.find_all('span')[1].text
             # print(postal)
